@@ -11,6 +11,8 @@ A simple and elegant To-Do list web application built with **React**. Manage you
 
 - 📌 **UUID-based Unique ID Generation**  
   Each task is assigned a globally unique identifier using [`uuid`](https://www.npmjs.com/package/uuid) to ensure precise task manipulation and storage.
+- 🌒 **Dark Mode / Light Mode Toggle**  
+  Toggle between dark and light themes using a custom slider switch. The selected mode is saved in `localStorage` and persists across reloads.
 
 - 💾 **Local Storage Integration**  
   Todos are persisted in `localStorage`, ensuring tasks remain after page reload or browser restart.
@@ -22,7 +24,7 @@ A simple and elegant To-Do list web application built with **React**. Manage you
   A “Show Finished” checkbox allows users to filter out completed tasks from the list for a cleaner interface.
 
 - 🎨 **Styled with Tailwind CSS**  
-  Modern UI built with responsive and interactive Tailwind classes. Includes subtle hover effects and layout responsiveness.
+  Modern UI built with responsive and interactive Tailwind classes. Includes subtle hover effects and layout responsiveness. 
 
 ---
 
