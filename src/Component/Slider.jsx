@@ -1,16 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Switch = () => {
+const Switch = ({ darkMode, setDarkMode }) => {
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <StyledWrapper >
+    <StyledWrapper>
       <label className="switch  ">
-        <input type="checkbox" />
+        <input type="checkbox" checked={darkMode} onChange={handleDarkMode} />
         <span className="slider" />
       </label>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   /* The switch - the box around the slider */
@@ -37,9 +41,9 @@ const StyledWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
-    transition: .4s;
+    background-color: rgb(70, 159, 248);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
     border-radius: 5px;
   }
 
@@ -52,7 +56,7 @@ const StyledWrapper = styled.div`
     left: 0.3em;
     bottom: 0.3em;
     background-color: white;
-    transition: .4s;
+    transition: 0.4s;
   }
 
   input:checked + .slider {
@@ -62,6 +66,7 @@ const StyledWrapper = styled.div`
 
   input:checked + .slider:before {
     transform: translateX(2.8em) rotate(360deg);
-  }`;
+  }
+`;
 
 export default Switch;

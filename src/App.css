@@ -1,5 +1,6 @@
 @import "tailwindcss";
 body{
+  overflow-y: hidden;
    background: linear-gradient(
   to bottom,
   rgb(5, 5, 10) 0%,
@@ -19,3 +20,35 @@ body{
 
 }
 
+.light{
+  background: linear-gradient(to bottom, #67b3ff 0%, rgb(141, 211, 255) 25%, rgb(161, 216, 255) 50%, rgb(193, 210, 255) 75%, rgb(224, 195, 255) 100%);
+  
+}
+.navlight{
+  background-color: rgb(70, 159, 248);
+}
+.containerLight{
+  background-color: rgba(47, 147, 246, 0.473);
+}
+
+.btnlight{
+  /* background-color: rgb(12, 133, 255); */
+  border: 1.5px solid white ;
+  
+}
+
+.todolist::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  
+}
+.todolist::-webkit-scrollbar-track {
+  background: #f0f0f00f;
+  border-radius: 10px;
+}
+.todolist::-webkit-scrollbar-thumb {
+  background: white          ;
+  border-radius: 10px;
+  height: 5px;
+  width: 10px;
+}
