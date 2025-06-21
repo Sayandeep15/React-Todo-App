@@ -85,6 +85,7 @@ function App() {
   return (
     <>
       <Nav />
+      
       <div className="w-full mt-12 mb-12 text-white">
         <div className="container  bg-[#131216] px-10 py-5 shadow-[0px_0px_20px_0px_rgba(255,_255,_255,_0.15)]  w-[600px] h-[600px] mx-auto  rounded-xl flex items-center flex-col">
           <h1 className="text-3xl mx-auto mb-4 ">
