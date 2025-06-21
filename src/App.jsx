@@ -110,7 +110,7 @@ function App() {
             <button
               onClick={handleAdd}
               disabled={todo.length <= 2}
-              className={!darkMode?"bg-[#313035] py-1 px-4 rounded-xl hover:scale-105 font-semibold hover:bg-[#2D2C30] transition-all ease":"btnlight py-1 px-4 rounded-xl font-semibold hover:scale-105  transition-all ease"}
+              className={!darkMode?"bg-[#313035] border-[1.5px] border-[#313035] py-1 px-4 rounded-xl hover:scale-105 font-semibold hover:bg-[#2D2C30] transition-all ease":"btnlight py-1 px-4 rounded-xl font-semibold hover:scale-105  transition-all ease"}
             >
               Add
             </button>
@@ -167,7 +167,7 @@ function App() {
                         onClick={(e) => {
                           handleEdit(e, item.id);
                         }}
-                        className={!darkMode?"bg-[#313035] py-1.5 px-4 rounded-xl hover:scale-105 hover:bg-[#2D2C30] transition-all ease": "btnlight py-1.5 px-4 rounded-xl hover:scale-105  transition-all ease"}
+                        className={!darkMode?"bg-[#313035] border-[1.5px] border-[#313035] py-1.5 px-4 rounded-xl hover:scale-105 hover:bg-[#2D2C30] transition-all ease": "btnlight py-1.5 px-4 rounded-xl hover:scale-105  transition-all ease"}
                       >
                         <BiSolidEdit />
                       </button>
@@ -175,7 +175,7 @@ function App() {
                         onClick={(e) => {
                           handleDlt(e, item.id);
                         }}
-                        className={!darkMode?"bg-[#313035] text-red-500 py-1.5 px-4 rounded-xl hover:scale-105 hover:bg-[#2D2C30] transition-all ease" : "btnlight text-red-500 py-1.5 px-4 rounded-xl hover:scale-105  transition-all ease"}
+                        className={!darkMode?"bg-[#313035] border-[1.5px] border-[#313035] text-red-500 py-1.5 px-4 rounded-xl hover:scale-105 hover:bg-[#2D2C30] transition-all ease" : "btnlight text-red-500 py-1.5 px-4 rounded-xl hover:scale-105  transition-all ease"}
                       >
                         <MdDeleteOutline />
                       </button>

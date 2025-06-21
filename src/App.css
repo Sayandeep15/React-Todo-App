@@ -32,7 +32,7 @@ body{
 }
 
 .btnlight{
-  /* background-color: rgb(12, 133, 255); */
+  background-color: rgba(60, 157, 254, 0.974);
   border: 1.5px solid white ;
   
 }
