@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 
 import { BiSolidEdit } from "react-icons/bi";
 import { MdDeleteOutline } from "react-icons/md";
+import { LuListTodo } from "react-icons/lu";
+import { MdAssignmentAdd } from "react-icons/md";
 
 // Color combinations:
 // #061411 dark grn
@@ -115,7 +117,7 @@ function App() {
             Manage your todos at one place
           </h1>
           {/* input todos */}
-          <p className="mr-auto font-medium">Add Your Todo</p>
+          <p className="mr-auto font-medium flex gap-1 items-center"><MdAssignmentAdd />Add Your Todo</p>
           <div className="inp  w-full my-2.5 gap-2 flex">
             <input
               type="text"
@@ -167,7 +169,7 @@ function App() {
           </div>
 
           {/* show todos */}
-          <p className="mr-auto mb-2 font-medium">Your Todos</p>
+          <p className="mr-auto mb-2 font-medium flex gap-1 items-center"><LuListTodo />Your Todos</p>
           <div className="todolist  text-white w-full overflow-y-auto overflow-x-hidden">
             {todos.length === 0 && (
               <div
