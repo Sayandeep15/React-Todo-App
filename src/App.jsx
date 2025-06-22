@@ -157,7 +157,7 @@ function App() {
               onClick={handleDltAll}
               className={
                 !darkMode
-                  ? " flex items-center gap-1 border-[1.5px]  text-sm font-semibold text-red-500 py-1.5 px-3 rounded-xl hover:scale-105 hover:bg-[#2D2C30] transition-all ease"
+                  ? " flex items-center gap-1 border-[1.5px]  text-sm font-semibold text-red-500 py-1.5 px-3 rounded-xl hover:scale-105  transition-all ease"
                   : "border boder-red-600  flex items-center gap-1 text-sm font-semibold text-red-600 py-1.5 px-3 rounded-xl hover:scale-105  transition-all ease"
               }
             >
