@@ -1,4 +1,4 @@
-# 📝 React Todo App
+# 📝 React Todo App 
 
 A simple and elegant To-Do list web application built with **React**. Manage your daily tasks with ease — add, delete, edit, and check off completed todos. Your data stays intact even after page reloads thanks to **localStorage**.
 
